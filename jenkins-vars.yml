@@ -1,0 +1,28 @@
+---
+
+# jenkins variables
+project_name: docker-bitcoin-knots
+external_type: na
+custom_version_command: "curl -sX GET http://ppa.launchpad.net/luke-jr/bitcoinknots/ubuntu/dists/noble/main/binary-amd64/Packages.gz | gunzip |grep -A 7 -m 1 'Package: bitcoin' | awk -F ': ' '/Version/{print $2;exit}'"
+release_type: stable
+release_tag: latest
+ls_branch: master
+build_armhf: false
+repo_vars:
+  - BUILD_VERSION_ARG = 'BITCOIN_RELEASE'
+  - LS_USER = 'linuxserver'
+  - LS_REPO = 'docker-bitcoin-knots'
+  - CONTAINER_NAME = 'bitcoin-knots'
+  - DOCKERHUB_IMAGE = 'linuxserver/bitcoin-knots'
+  - DEV_DOCKERHUB_IMAGE = 'lsiodev/bitcoin-knots'
+  - PR_DOCKERHUB_IMAGE = 'lspipepr/bitcoin-knots'
+  - DIST_IMAGE = 'ubuntu'
+  - MULTIARCH = 'true'
+  - CI = 'true'
+  - CI_WEB = 'true'
+  - CI_PORT = '3001'
+  - CI_SSL = 'true'
+  - CI_DELAY = '120'
+  - CI_DOCKERENV = ''
+  - CI_AUTH = ''
+  - CI_WEBPATH = ''
