@@ -594,4 +594,5 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **02.01.26:** - Add Wayland init logic.
 * **09.09.25:** - Initial release.

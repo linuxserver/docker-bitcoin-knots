@@ -107,4 +107,5 @@ init_diagram: |
   "bitcoin-knots:latest" <- Base Images
 # changelog
 changelogs:
+  - {date: "02.01.26:", desc: "Add Wayland init logic."}
   - {date: "09.09.25:", desc: "Initial release."}
