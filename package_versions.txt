@@ -19,10 +19,10 @@ bash                                                                          5.
 binutils                                                                      2.42-4ubuntu2.8                         deb                         
 binutils-common                                                               2.42-4ubuntu2.8                         deb                         
 binutils-x86-64-linux-gnu                                                     2.42-4ubuntu2.8                         deb                         
-bitcoin-qt                                                                    29.2.knots20251110-noble1               deb                         
-bitcoin-tx                                                                    29.2.knots20251110-noble1               deb                         
-bitcoin-wallet                                                                29.2.knots20251110-noble1               deb                         
-bitcoind                                                                      29.2.knots20251110-noble1               deb                         
+bitcoin-qt                                                                    29.3.knots20260210-noble1               deb                         
+bitcoin-tx                                                                    29.3.knots20260210-noble1               deb                         
+bitcoin-wallet                                                                29.3.knots20260210-noble1               deb                         
+bitcoind                                                                      29.3.knots20260210-noble1               deb                         
 blinker                                                                       1.7.0                                   python                      
 breeze-cursor-theme                                                           4:5.27.12-0ubuntu0.1                    deb                         
 bsdextrautils                                                                 2.39.3-9ubuntu6.4                       deb                         
