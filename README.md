@@ -615,5 +615,6 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **03.04.26:** - Make Wayland default disable with PIXELFLUX_WAYLAND=false.
 * **02.01.26:** - Add Wayland init logic.
 * **09.09.25:** - Initial release.
