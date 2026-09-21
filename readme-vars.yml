@@ -56,7 +56,6 @@ init_diagram: |
     init-crontab-config -> init-config-end
     init-config -> init-crontab-config
     init-mods-end -> init-custom-files
-    init-config-end -> init-deprecate
     init-adduser -> init-device-perms
     base -> init-envfile
     base -> init-migrations
@@ -71,7 +70,6 @@ init_diagram: |
     init-nginx -> init-selkies-config
     init-video -> init-selkies-end
     init-custom-files -> init-services
-    init-deprecate -> init-services
     init-selkies-config -> init-video
     init-services -> svc-cron
     svc-cron -> legacy-services
@@ -79,6 +77,7 @@ init_diagram: |
     svc-xorg -> svc-dbus
     svc-dbus -> legacy-services
     init-services -> svc-de
+    legacy-cont-init -> svc-de
     svc-nginx -> svc-de
     svc-selkies -> svc-de
     svc-xorg -> svc-de
@@ -104,7 +103,7 @@ init_diagram: |
     svc-xsettingsd -> legacy-services
   }
   Base Images: {
-    "baseimage-selkies:ubuntunoble" <- "baseimage-ubuntu:noble"
+    "baseimage-selkies:ubunturesolute" <- "baseimage-ubuntu:resolute"
   }
   "bitcoin-knots:latest" <- Base Images
 # changelog
