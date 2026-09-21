@@ -149,7 +149,7 @@ pipeline {
       steps{
         script{
           env.EXT_RELEASE = sh(
-            script: ''' curl -sX GET http://ppa.launchpad.net/luke-jr/bitcoinknots/ubuntu/dists/noble/main/binary-amd64/Packages.gz | gunzip |grep -A 7 -m 1 'Package: bitcoin' | awk -F ': ' '/Version/{print $2;exit}' ''',
+            script: ''' curl -sX GET http://ppa.launchpad.net/luke-jr/bitcoinknots/ubuntu/dists/resolute/main/binary-amd64/Packages.gz | gunzip |grep -A 7 -m 1 'Package: bitcoin' | awk -F ': ' '/Version/{print $2;exit}' ''',
             returnStdout: true).trim()
             env.RELEASE_LINK = 'custom_command'
         }
