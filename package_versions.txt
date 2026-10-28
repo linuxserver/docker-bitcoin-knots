@@ -25,10 +25,10 @@ bcrypt                                                                        5.
 binutils                                                                      2.46-3ubuntu2                          deb                         
 binutils-common                                                               2.46-3ubuntu2                          deb                         
 binutils-x86-64-linux-gnu                                                     2.46-3ubuntu2                          deb                         
-bitcoin-qt                                                                    29.4.knots20260508.2-resolute1         deb                         
-bitcoin-tx                                                                    29.4.knots20260508.2-resolute1         deb                         
-bitcoin-wallet                                                                29.4.knots20260508.2-resolute1         deb                         
-bitcoind                                                                      29.4.knots20260508.2-resolute1         deb                         
+bitcoin-qt                                                                    29.4.knots20260508.3-resolute1         deb                         
+bitcoin-tx                                                                    29.4.knots20260508.3-resolute1         deb                         
+bitcoin-wallet                                                                29.4.knots20260508.3-resolute1         deb                         
+bitcoind                                                                      29.4.knots20260508.3-resolute1         deb                         
 blinker                                                                       1.9.0                                  python                      
 breeze-cursor-theme                                                           4:6.6.5-0ubuntu0.1                     deb                         
 bsdextrautils                                                                 2.41.3-3ubuntu2.2                      deb                         
